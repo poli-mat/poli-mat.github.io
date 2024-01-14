@@ -78,6 +78,21 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* Initially hide Japanese content */
+        [lang="ja"] {
+            display: none;
+        }
+
+        /* Show Japanese content when lang=ja is set */
+        [lang="ja"]:lang(ja) {
+            display: initial;
+        }
+
+        /* Hide English content when lang=ja is set */
+        [lang="en"]:lang(ja) {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -135,6 +150,13 @@
     <script>
         function switchLanguage(lang) {
             document.documentElement.lang = lang;
+
+            // Set lang attribute for dynamically added content
+            document.getElementById('name').lang = lang;
+            document.getElementById('projects').lang = lang;
+            document.getElementById('resume').lang = lang;
+            document.getElementById('blog').lang = lang;
+            document.getElementById('contact').lang = lang;
         }
     </script>
 
