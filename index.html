@@ -82,40 +82,64 @@
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Welcome to my professional portfolio</p>
+        <h1 lang="en">Your Name</h1>
+        <h1 lang="ja">あなたの名前</h1>
+        <p lang="en">Welcome to my professional portfolio</p>
+        <p lang="ja">私のプロフィールへようこそ</p>
     </header>
 
     <section>
-        <h2>Projects</h2>
+        <h2 lang="en">Projects</h2>
+        <h2 lang="ja">プロジェクト</h2>
         <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 lang="en">Project 1</h3>
+            <h3 lang="ja">プロジェクト1</h3>
+            <p lang="en">Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p lang="ja">プロジェクト1の説明。Lorem ipsum dolor sit amet、consectetur adipiscing elit。</p>
         </div>
         <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 lang="en">Project 2</h3>
+            <h3 lang="ja">プロジェクト2</h3>
+            <p lang="en">Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p lang="ja">プロジェクト2の説明。Lorem ipsum dolor sit amet、consectetur adipiscing elit。</p>
         </div>
         <!-- Add more projects as needed -->
     </section>
 
     <section>
-        <h2>Resume</h2>
-        <p>Include your resume content here. You can format it with headings, bullet points, etc.</p>
+        <h2 lang="en">Resume</h2>
+        <h2 lang="ja">履歴書</h2>
+        <p lang="en">Include your resume content here. You can format it with headings, bullet points, etc.</p>
+        <p lang="ja">ここに履歴書の内容を含めてください。見出し、箇条書きなどで書式を整えることができます。</p>
     </section>
 
     <section>
-        <h2>Blog</h2>
-        <p>Share your thoughts, experiences, and insights here. You can create blog posts with links and images.</p>
+        <h2 lang="en">Blog</h2>
+        <h2 lang="ja">ブログ</h2>
+        <p lang="en">Share your thoughts, experiences, and insights here. You can create blog posts with links and images.</p>
+        <p lang="ja">ここで思考、経験、洞察を共有してください。リンクや画像を含むブログ投稿ができます。</p>
     </section>
 
     <section>
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <h2 lang="en">Contact</h2>
+        <h2 lang="ja">お問い合わせ</h2>
+        <p lang="en">Feel free to reach out to me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p lang="ja">お気軽にお問い合わせください：<a href="mailto:your.email@example.com">your.email@example.com</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p lang="en">&copy; 2024 Your Name. All rights reserved.</p>
+        <p lang="ja">&copy; 2024 あなたの名前。全著作権所有。</p>
     </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            document.documentElement.lang = lang;
+        }
+    </script>
+
+    <!-- Optional: Add language switch buttons -->
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('ja')">日本語</button>
 </body>
 </html>
