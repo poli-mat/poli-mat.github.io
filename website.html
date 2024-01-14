@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
@@ -15,15 +15,15 @@
         }
 
         header {
-            background-color: #343a40;
-            padding: 1em 0;
+            background-color: #007bff;
+            padding: 2em 0;
             text-align: center;
             color: #fff;
         }
 
         h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 3em;
         }
 
         p {
@@ -38,8 +38,8 @@
 
         h2 {
             color: #343a40;
-            border-bottom: 2px solid #343a40;
-            padding-bottom: 5px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
         }
 
         ul {
@@ -49,11 +49,11 @@
         }
 
         li {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         footer {
-            background-color: #343a40;
+            background-color: #007bff;
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -65,10 +65,18 @@
         a {
             color: #007bff;
             text-decoration: none;
+            transition: color 0.3s ease-in-out;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -80,11 +88,15 @@
 
     <section>
         <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> Description of Project 1</li>
-            <li><strong>Project 2:</strong> Description of Project 2</li>
-            <!-- Add more projects as needed -->
-        </ul>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Add more projects as needed -->
     </section>
 
     <section>
